@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="Scripts/movieselection.js" type="text/javascript"></script>
+    
+    <link href="Styles/movieSelect.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="Styles/jquery.qtip.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery.qtip.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="main" style="margin-left: 300px; margin-right: 300px;padding-top: 100px;">
+    <div class="homeBtn">Pharmeasy</div>
+        <div class="home" style="height: 100%; width: 100%; text-align: center; line-height: 40px; font-size: 16px;
+            font-weight: 600; color: #736F6F; ">
+            <div class="roleSelection">Select your Role</div>
+            <div class="loginParent">
+                <div class="btnParent"><div class="btnPatient">Patient</div></div>
+                <div class="btnParent"><div class="btnDoctor">Doctor</div></div>
+                <div class="btnParent"><div class="btnPharma">Pharmacist</div></div>
+            </div>
+        </div>
+        <div class="PatientPage hiddenclass">
+            <div class="tabsDiv">
+            <div class="PatientHeaderRec selectedTab">My Medical Records</div>
+            <div class="PatientHeaderPres">My Prescriptions</div>
+            </div>
+            <div class="PatientPageBody">
+                <div class="PatientBodyHeader">
+                    <div class="date">Record Date</div>
+                    <div class="title">Title</div>
+                    <div class="file">File</div>
+                </div>
+                <div class="PatientActualBody"></div>
+            </div>
+            <div class="PatientPrefPageBody hiddenclass">
+                <div class="PatientPrefBodyHeader">
+                    <div class="presdate">Record Date</div>
+                    <div class="presName">Name</div>
+                    <div class="presDesg">Designation</div>
+                    <div class="presFiles">Files</div>
+                    <div class="presAction">Action</div>
+                </div>
+                <div class="PatientPresActualBody"></div>
+            </div>
+        </div>
+        <div class="DoctorPage hiddenclass">
+            <div class="DoctorHeader">Patient Prescriptions</div>
+            <div class="DoctorPageBody">
+                <div class="DoctorPrefBodyHeader">
+                    <div class="docName">Name</div>
+                    <div class="docId">Patient Id</div>
+                    <div class="docPhone">Phone</div>
+                    <div class="docGender">Gender</div>
+                    <div class="docRequest">Action</div>
+                </div>
+                <div class="DocPresActualBody"></div>
+            </div>
+        </div>
+        <div class="PharmaPage hiddenclass">
+            <div class="DoctorHeader">Patient Prescriptions</div>
+            <div class="PharmaPageBody">
+                <div class="DoctorPrefBodyHeader">    
+                    <div class="docName">Name</div>
+                    <div class="docId">Patient Id</div>
+                    <div class="docPhone">Phone</div>
+                    <div class="docGender">Gender</div>
+                    <div class="docRequest">Action</div>
+                </div>
+                <div class="PharmaPresActualBody"></div>
+            </div>
+        </div>
+
+        <div style="width: 100%" class="hiddenclass" >
+            <table id="tblUserName" style="width: 100%; height: 50px; margin-left: 60px;">
+                <tbody>
+                    <tr>
+                        <td style="width: 12%;">
+                            Name
+                        </td>
+                        <td style="width: 25%">
+                            <input type="text" class="form-control" placeholder="Enter Name" id="txtUserName"
+                                style="display: inline-block; height: 28px; width: 190px;">
+                            <div id="NameValidDIv" class="NameValidation" style="display: none;">
+                                !</div>
+                        </td>
+                        <td style="width: 25%; padding-left: 35px;">
+                            Number of Seats
+                        </td>
+                        <td style="width: 25%">
+                            <input style="width: 25px;" id="txtNumberSeats">
+                            <div class="seatsValidation" id="seatsValidDIv" style="display: none;">
+                                !</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align: center; height: 35px; margin-top: 10px;">
+                <input type="button" class="btn btn-info dropdown-toggle" id="btnSelectionStart"
+                    value="Start Selection" style="height: 30px; line-height: 30px; padding: 0px 10px;
+                    font-size: 14px;">
+            </div>
+        </div>
+        <div id="divSeatSelection" class="opacitySeats hiddenclass" style="text-align: center; padding: 0 19%;
+            padding-top: 15px;">
+            <div style="border: 1px solid lightgray; border-radius: 4px; color: #736F6F;">
+                <div style="height: 40px; line-height: 40px; font-weight: bold;">
+                    Screen</div>
+                <div>
+                    <div style="display: inline-block; font-weight: 600;">
+                        <table style="" id="tblColumn">
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="display: inline-block;">
+                        <table style="" id="tblseatMap">
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div style="padding-left: 57px; font-size: 12px; font-weight: 600;">
+                    <table id="tblRow">
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="display : none;" class = "seatSelectedIndicator"></div>
+            </div>
+            <div style="height: 50px; padding-top: 15px;">
+                <input id="btnConfirm" value="Confirm Selection" type="button" class="btn btn-success"
+                    style="line-height: 30px; height: 30px; padding: 0 10px; /* border-radius: 2px;
+                    */"></div>
+        </div>
+        <div class="hiddenclass">
+            <div style="text-align: center; /* border-top: 1px solid lightgray; */
+    height: 25px; line-height: 25px; font-weight: 600; color: #736F6F;">
+                Reservation List</div>
+            <table style="color: #736F6F; margin-left: 60px; width: 100%; border: 1px solid lightgray;
+                border-radius: 0px;" id="tblSeatSelected">
+                <thead>
+                    <tr>
+                        <th style="width: 33%; border-left:1px solid lightgray; height:25px;line-height : 25px; padding-left:8px;">
+                            Name
+                        </th>
+                        <th style="width: 33%; border-left:1px solid lightgray; height:25px;line-height : 25px; padding-left:8px;">
+                            Number of Seats
+                        </th>
+                        <th style="width: 33%; height:25px;line-height : 25px; border-left:1px solid lightgray; padding-left:8px;">
+                            Seat Numbers
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="noReservation">There are no Reservations</div>
+        </div>
+    </div>
+</body>
+</html>

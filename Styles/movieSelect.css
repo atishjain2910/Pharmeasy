@@ -1,0 +1,762 @@
+﻿.homeBtn {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    position: absolute;
+    top:0px;
+    color: #2da2c7;
+    background-color: #efefef;
+    left: 0px;
+    cursor: pointer;
+}
+
+.roleSelection {
+    height: 50px;
+    font-size: 20px;
+    /* color: black; */
+}
+
+.loginParent {
+    font-size: 30px;
+    color: #7acbbd;
+
+}
+
+.tabsDiv {
+    height: 60px;
+    line-height: 50px;
+    /* padding-bottom: 10px; */
+    text-align: center;
+    font-size: 20px;
+    color: #0056b3;
+}
+
+.PatientPrefPageBody,.PatientPageBody {
+    border: 1px solid lightgray;
+    border-bottom: 0px;
+    border-radius: 4px;
+}
+.selectedTab
+{
+   text-decoration: underline;
+}
+
+.DoctorHeader {
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+}
+
+.PatientPage,.PharmaPage,.DoctorPage {
+    padding-top: 50px;
+}
+
+.DoctorPrefBodyHeader {
+    height: 30px;
+    line-height: 30px;
+    background-color: lightgray;
+}
+
+.DoctorPageBody {
+    border: 1px solid lightgray;
+    border-bottom: 0px;
+    border-radius: 4px;
+}
+
+.PharmaPageBody {
+    border: 1px solid lightgray;
+    border-bottom: 0px;
+    border-radius: 4px;
+}
+
+.docName {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docId {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docPhone {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docGender {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docRequest {
+    width: 18%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docNameRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docPatientRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.dovPhRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docGenderRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docActionRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+.row
+{
+  margin:0px !important;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid lightgray;
+}
+
+.presdate {
+    width: 15%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.presName {
+    width: 25%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.presDesg {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.presFiles {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.presAction {
+    width: 18%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.datePresRec {
+    width: 15%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.titlePresRec {
+    width: 25%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.desgPresRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.filePresRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.actionPresRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.row {
+    margin: 0;
+}
+
+.PatientHeaderRec {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+.PatientHeaderPres {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.PatientPrefBodyHeader,.PatientBodyHeader {
+    height: 40px;
+    line-height: 40px;
+    background-color: lightgray;
+}
+
+.btnParent 
+{
+    display: inline-block;
+    padding: 0 50px;
+    cursor: pointer;
+}
+
+.hiddenclass
+{
+    display: none;
+}
+
+.date {
+    width: 33%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.title {
+    width: 33%;
+    display: inline-block;
+}
+
+.file {
+    width: 33%;
+    display: inline-block;
+}
+
+.dateRec {
+    width: 33%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.titleRec {
+    width: 33%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.fileRec {
+    width: 33%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+
+.selectTicket
+{
+      background-image: url(../../images/1_1.png);
+ width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.selectedTicket
+{
+  background-image: url(../../images/1_4.png);
+ width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-repeat: no-repeat; 
+}
+
+.alreadyselectedTicket
+{
+  background-image: url(../../images/1_2.png);
+ width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-repeat: no-repeat; 
+}
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    background-image:url(../../images/backround-image.png);
+    background-repeat:repeat;
+}
+
+#txtNumberSeats
+{
+    outline : none;   
+    height: 20px;
+}
+
+.selectRow
+{
+    width: 45px;
+  height: 25px;
+  cursor: pointer;
+  
+}
+
+.selectColumn
+{
+    width: 25px;
+  height: 35px;
+  cursor: pointer;
+  
+}
+
+.opacitySeats
+{
+    pointer-events:none;
+    opacity:0.3;   
+}
+
+.seatsValidation
+{
+    display: inline-block;
+    height: 28px;
+    position: relative;  
+    top: 3px;
+    line-height: 33px;
+    width: 20px;
+    text-align: center;
+    background-color: #DE8A8A;   
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -moz-border-radius-topright: 2px;
+    -moz-border-radius-bottomright: 2px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    left: -6px;
+    /* float: left; */
+}
+
+.NameValidation
+{
+    display: inline-block;
+    height: 28px;
+    position: relative;  
+    top: 2px;
+    line-height: 33px;
+    width: 20px;
+    text-align: center;
+    background-color: #DE8A8A;   
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -moz-border-radius-topright: 2px;
+    -moz-border-radius-bottomright: 2px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    left:-7px;
+    /* float: left; */
+}
+
+.noReservation
+{
+    height: 30px;
+    
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.reservationRowClass
+{
+    border-top: 1px solid lightgray;
+    
+}
+
+tr.reservationRowClass td {
+    border-left: 1px solid lightgray;
+    padding-left: 8px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.tabsDiv {
+    height: 60px;
+    line-height: 50px;
+    /* padding-bottom: 10px; */
+    text-align: center;
+    font-size: 20px;
+    color: #0056b3;
+}
+
+.PatientPrefPageBody,.PatientPageBody {
+    border: 1px solid lightgray;
+    border-bottom: 0px;
+    border-radius: 4px;
+}
+.selectedTab
+{
+   text-decoration: underline;
+}
+
+.DoctorHeader {
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+}
+
+.PatientPage,.PharmaPage,.DoctorPage {
+    padding-top: 50px;
+}
+
+.DoctorPrefBodyHeader {
+    height: 30px;
+    line-height: 30px;
+    background-color: lightgray;
+}
+
+.DoctorPageBody {
+    border: 1px solid lightgray;
+    border-bottom: 0px;
+    border-radius: 4px;
+}
+
+.PharmaPageBody {
+    border: 1px solid lightgray;
+    border-bottom: 0px;
+    border-radius: 4px;
+}
+
+.docName {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docId {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docPhone {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docGender {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docRequest {
+    width: 18%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docNameRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docPatientRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.dovPhRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docGenderRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.docActionRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+.row
+{
+  margin:0px !important;
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid lightgray;
+}
+
+.presdate {
+    width: 15%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.presName {
+    width: 25%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.presDesg {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.presFiles {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.presAction {
+    width: 18%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.datePresRec {
+    width: 15%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.titlePresRec {
+    width: 25%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.desgPresRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.filePresRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.actionPresRec {
+    width: 20%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.row {
+    margin: 0;
+}
+
+.PatientHeaderRec {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+.PatientHeaderPres {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+.PatientPrefBodyHeader,.PatientBodyHeader {
+    height: 40px;
+    line-height: 40px;
+    background-color: lightgray;
+}
+
+
+
+.hiddenclass
+{
+    display: none;
+}
+
+.date {
+    width: 33%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.title {
+    width: 33%;
+    display: inline-block;
+}
+
+.file {
+    width: 33%;
+    display: inline-block;
+}
+
+.dateRec {
+    width: 33%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.titleRec {
+    width: 33%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.fileRec {
+    width: 33%;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+
+.selectTicket
+{
+      background-image: url(../../images/1_1.png);
+ width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.selectedTicket
+{
+  background-image: url(../../images/1_4.png);
+ width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-repeat: no-repeat; 
+}
+
+.alreadyselectedTicket
+{
+  background-image: url(../../images/1_2.png);
+ width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-repeat: no-repeat; 
+}
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    background-image:url(../../images/backround-image.png);
+    background-repeat:repeat;
+}
+
+#txtNumberSeats
+{
+    outline : none;   
+    height: 20px;
+}
+
+.selectRow
+{
+    width: 45px;
+  height: 25px;
+  cursor: pointer;
+  
+}
+
+.selectColumn
+{
+    width: 25px;
+  height: 35px;
+  cursor: pointer;
+  
+}
+
+.opacitySeats
+{
+    pointer-events:none;
+    opacity:0.3;   
+}
+
+.seatsValidation
+{
+    display: inline-block;
+    height: 28px;
+    position: relative;  
+    top: 3px;
+    line-height: 33px;
+    width: 20px;
+    text-align: center;
+    background-color: #DE8A8A;   
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -moz-border-radius-topright: 2px;
+    -moz-border-radius-bottomright: 2px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    left: -6px;
+    /* float: left; */
+}
+
+.NameValidation
+{
+    display: inline-block;
+    height: 28px;
+    position: relative;  
+    top: 2px;
+    line-height: 33px;
+    width: 20px;
+    text-align: center;
+    background-color: #DE8A8A;   
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -moz-border-radius-topright: 2px;
+    -moz-border-radius-bottomright: 2px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    left:-7px;
+    /* float: left; */
+}
+
+.noReservation
+{
+    height: 30px;
+    
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
+
+.reservationRowClass
+{
+    border-top: 1px solid lightgray;
+    
+}
+
+tr.reservationRowClass td {
+    border-left: 1px solid lightgray;
+    padding-left: 8px;
+    height: 22px;
+    line-height: 22px;
+}
